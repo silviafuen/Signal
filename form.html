@@ -19,11 +19,132 @@
     <![endif]-->
   </head>
   <body>
-    <div class="container" style="text-align:center;">
+    <div style="text-align:center;">
         <img src="logo.png" alt="Signal">
     </div>
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <div class="container-fluid col-md-12" > <!-- If Needed Left and Right Padding in 'md' and 'lg' screen means use container class -->
+      <div class="row">
+        <div class="col-md-12">
+          <div class="col-md-3 ">
+            LEFT
+          </div>
+          <div class="col-md-6 form-style">
+            <form action="submitted.html" method="POST">
+              <!-- Name portion -->
+              <div class="form-inline">
+                <div class="col-lg-8 right-inner-addon">
+                  <label class="sr-only" for="FirstNameInput">First Name</label>
+                  <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0 text-field" id="inlineFormInput" placeholder="First Name">
+                </div>
+                <div class="col-lg-4 right-inner-addon">
+                  <label class="sr-only" for="LastNameInput">Last Name</label>
+                  <input type="text" class="form-control text-field" id="inlineFormInputGroup" placeholder="Last Name">
+                </div>
+              </div>
+              <br></br>
+              <!--email -->
+              <div class="form-group col-md-12 right-inner-addon">
+                <label for="EmailInput">Email address</label>
+                <input type="email" class="form-control text-field" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+              </div>
+              <!-- birthday -->
+              <div class="form-group col-md-12 right-inner-addon">
+                <div class="form-inline right-inner-addon">
+                  <h4> Birthday </h4>
+                  <div class="form-group right-inner-addon">
+                      <label for="exampleSelect1" class="sr-only">Month</label>
+                      <br>
+                      <select class="form-control text-field" id="BirthdayMonth">
+                        <option class="text-field">January</option>
+                        <option>February</option>
+                        <option>March</option>
+                        <option>April</option>
+                        <option>May</option>
+                        <option>June</option>
+                        <option>July</option>
+                        <option>August</option>
+                        <option>September</option>
+                        <option>October</option>
+                        <option>November</option>
+                        <option>December</option>
+                      </select>
+                  </div>
+                  <div class="form-group ">
+                        <label for="exampleSelect1" class="sr-only">Day</label>
+                        <br>
+                        <select class="form-control" id="BirthdayMonth">
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                          <option>6</option>
+                          <option>7</option>
+                          <option>8</option>
+                          <option>9</option>
+                          <option>10</option>
+                          <option>11</option>
+                          <option>12</option>
+                        </select>
+                    </div>
+                  <div class="form-group ">
+                        <label for="exampleSelect1" class="sr-only">Year</label>
+                        <br>
+                        <select class="form-control" id="BirthdayYear">
+                          <option>1990</option>
+                          <option>1991</option>
+                          <option>1992</option>
+                          <option>1993</option>
+                          <option>1994</option>
+                          <option>1995</option>
+                          <option>1996</option>
+                          <option>1997</option>
+                          <option>1998</option>
+                          <option>1999</option>
+                          <option>2000</option>
+                          <option>2001</option>
+                        </select>
+                    </div>
+                </div>
+              </div>
+              <!-- multiple choice-->
+              <div class="form-group col-md-12">
+                <h4>Would you like to recieve reminders?</h4>
+                <div class="col-lg-8">
+                  <label class="custom-control custom-radio">
+                    <input id="radio1" name="radio" type="radio" class="custom-control-input">
+                    <span class="custom-control-indicator"></span>
+                    <span class="custom-control-description">Yes</span>
+                  </label>
+                </div>
+                <div class="col-lg-4">
+                  <label class="custom-control custom-radio">
+                    <input id="radio2" name="radio" type="radio" class="custom-control-input">
+                    <span class="custom-control-indicator"></span>
+                    <span class="custom-control-description">No</span>
+                  </label>
+                </div>
+              </div>
+              <!--Terms-->
+              <div class="form-group has-signal col-md-12">
+                <label class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input">
+                  <span class="custom-control-indicator"></span>
+                  <span class="custom-control-description">You agree to the terms of this fake contract</span>
+                </label>
+              </div>
+              <div class="col-md-12">
+               <button type="submit" class="btn btn-signal btn-lg btn-block">Submit</button>
+             </div>
+            </form>
+          </div>
+          <div class="col-md-3">
+            RIGHT
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> -
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
